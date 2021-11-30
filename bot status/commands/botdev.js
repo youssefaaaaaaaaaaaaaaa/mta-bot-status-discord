@@ -7,8 +7,8 @@ module.exports = {
 
       .setColor("RED")
 	  .addField("Bot name :", `${client.user.tag}`,true)
-	  .addField("developed by :", "<@721037514667720811>",true)
-	  .addField("Server :", "https://discord.gg/AawhAQMYjb",true)
+	  .addField("developed by :", "<@835252367704195142>",true)
+	  .addField("Server :", "https://discord.gg/7SdHVbVZ",true)
     message.channel.send(embed);
   },
 };
