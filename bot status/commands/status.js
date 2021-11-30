@@ -6,8 +6,8 @@ module.exports = {
   run(client, message, args) {
     Gamedig.query({
 	type: "mtasa", // by : zef
-      host: "178.32.127.216", // عنوان الخادم حطه هنا
-      port: "22003", // بورت الخادم حطه هنا
+      host: "45.146.253.177", // عنوان الخادم حطه هنا
+      port: "32215", // بورت الخادم حطه هنا
     })
       .then((state) => {
         if (state["raw"]["numplayers"] === 0) {
@@ -38,7 +38,7 @@ module.exports = {
         let embed = new Discord.MessageEmbed()
           .setColor("RED")
           .setTitle(state["name"])
-          .addField("Status:", "Offline")
+          .addField("Status:", "online")
 		  .addField(
               "Players",
               state["raw"]["numplayers"] + "/" + state["maxplayers"],
